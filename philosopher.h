@@ -49,6 +49,7 @@ typedef struct s_program
 	pthread_mutex_t	write_lock;
 	t_philo			*philos;
 	pthread_mutex_t	*forks;
+	pthread_t 		monitor_thread;
 }					t_program;
 
 
