@@ -6,7 +6,7 @@
 /*   By: tlegendr <tlegendr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 11:23:55 by tlegendr          #+#    #+#             */
-/*   Updated: 2024/11/16 15:09:20 by tlegendr         ###   ########.fr       */
+/*   Updated: 2024/11/16 16:51:14 by tlegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,6 @@ int	is_all_digit(char *str)
 	i = 0;
 	if (str[0] == '\0')
 		return (0);
-	if (str[0] == '-' || str[0] == '+')
-		i++;
 	while (str[i])
 	{
 		if (str[i] < '0' || str[i] > '9')

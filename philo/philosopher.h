@@ -6,7 +6,7 @@
 /*   By: tlegendr <tlegendr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 20:06:06 by tlegendr          #+#    #+#             */
-/*   Updated: 2024/11/16 15:24:29 by tlegendr         ###   ########.fr       */
+/*   Updated: 2024/11/16 15:59:48 by tlegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ typedef struct s_philo
 {
 	pthread_t		thread;
 	int				id;
-	int				eating;
 	int				meals_eaten;
 	long			last_meal;
 	int				time_to_die;
@@ -66,6 +65,9 @@ void	init_monitor_thread(t_program *program);
 void	init_mutex(t_program *program);
 void	destroy_mutex(t_program *program);
 
+int		ft_strlen(char *str);
+int		can_fit_in_int(char *str);
+int		start_philo_routine(t_program *program);
 int		check_all_args(int argc, char **argv);
 
 void	philosopher(t_philo *philosopher);

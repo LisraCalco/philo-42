@@ -6,7 +6,7 @@
 /*   By: tlegendr <tlegendr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 11:23:45 by tlegendr          #+#    #+#             */
-/*   Updated: 2024/11/16 13:23:27 by tlegendr         ###   ########.fr       */
+/*   Updated: 2024/11/16 15:59:38 by tlegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 void	init_philo_values(t_program *program, char **argv, int argc, int i)
 {
 	program->philos[i].id = i + 1;
-	program->philos[i].eating = 0;
 	program->philos[i].meals_eaten = 0;
 	program->philos[i].last_meal = 0;
 	program->philos[i].time_to_die = ft_atoi(argv[2]);
