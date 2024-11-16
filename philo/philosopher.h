@@ -6,21 +6,20 @@
 /*   By: tlegendr <tlegendr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 20:06:06 by tlegendr          #+#    #+#             */
-/*   Updated: 2024/11/16 14:04:07 by tlegendr         ###   ########.fr       */
+/*   Updated: 2024/11/16 15:24:29 by tlegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHILOSOPHER_H
 # define PHILOSOPHER_H
 
-# include <math.h>
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
 # include <pthread.h>
 # include <sys/time.h>
 
-# define USAGE_ERROR "Usage: ./philosopher number_of_philosopher time_to_die time_to_eat \
+# define USAGE_ERROR "Usage: ./philo number_of_philosopher time_to_die time_to_eat \
 time_to_sleep [number_of_time_each_philosopher_must_eat]\n"
 # define FORK_TAKEN "has taken a fork\n"
 # define EATING "is eating\n"

@@ -6,11 +6,11 @@
 #    By: tlegendr <tlegendr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/08 16:14:59 by tlegendr          #+#    #+#              #
-#    Updated: 2024/11/16 13:19:36 by tlegendr         ###   ########.fr        #
+#    Updated: 2024/11/16 15:22:15 by tlegendr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = philosopher
+NAME = philo
 
 SRC = main.c \
 		routine.c \

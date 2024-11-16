@@ -6,7 +6,7 @@
 /*   By: tlegendr <tlegendr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 11:23:52 by tlegendr          #+#    #+#             */
-/*   Updated: 2024/11/16 14:06:35 by tlegendr         ###   ########.fr       */
+/*   Updated: 2024/11/16 14:44:11 by tlegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	philosopher(t_philo *philosopher)
 {
-	if (philosopher->id % 2)
+	if (philosopher->id % 2 == 0)
 		usleep(100);
 	while (philo_is_dead(philosopher) == 0)
 	{
