@@ -6,18 +6,22 @@
 #    By: tlegendr <tlegendr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/08 16:14:59 by tlegendr          #+#    #+#              #
-#    Updated: 2024/11/13 16:02:42 by tlegendr         ###   ########.fr        #
+#    Updated: 2024/11/16 13:19:36 by tlegendr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = philosopher
 
-SRC = main.c
+SRC = main.c \
+		routine.c \
+		utils.c \
+		init.c \
+		status.c
 OBJ = $(SRC:.c=.o)
 
 CC = cc
-CFLAGS += -Wall -Wextra -Werror -I/usr/include
-LDFLAGS = 
+CFLAGS += -Wall -Wextra -Werror -I/usr/include -g
+LDFLAGS =
 
 
 all: $(NAME)
