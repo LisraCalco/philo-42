@@ -6,7 +6,7 @@
 /*   By: tlegendr <tlegendr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 14:29:00 by tlegendr          #+#    #+#             */
-/*   Updated: 2024/11/16 17:01:21 by tlegendr         ###   ########.fr       */
+/*   Updated: 2024/11/16 17:14:58 by tlegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ int	start_philo_routine(t_program *program)
 	i = 0;
 	while (i < program->num_of_philos)
 	{
-		program->philos[i].start_time = get_current_epoch();
 		pthread_create(&program->philos[i].thread, NULL,
 			(void *)philosopher, &program->philos[i]);
 		i++;
