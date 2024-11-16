@@ -6,7 +6,7 @@
 #    By: tlegendr <tlegendr@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/08 16:14:59 by tlegendr          #+#    #+#              #
-#    Updated: 2024/11/16 15:22:15 by tlegendr         ###   ########.fr        #
+#    Updated: 2024/11/16 17:25:46 by tlegendr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ OBJ = $(SRC:.c=.o)
 
 CC = cc
 CFLAGS += -Wall -Wextra -Werror -I/usr/include -g
-LDFLAGS =
+LDFLAGS = -lpthread
 
 
 all: $(NAME)
